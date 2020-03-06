@@ -1,0 +1,311 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5E619942
+P 2475 4225
+F 0 "J?" H 2555 4267 50  0000 L CNN
+F 1 "Conn_01x03" H 2555 4176 50  0000 L CNN
+F 2 "Connector_Hirose:Hirose_DF13-03P-1.25DSA_1x03_P1.25mm_Vertical" H 2475 4225 50  0001 C CNN
+F 3 "~" H 2475 4225 50  0001 C CNN
+	1    2475 4225
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x18 J?
+U 1 1 5E61A7B0
+P 2450 2800
+F 0 "J?" H 2368 3817 50  0000 C CNN
+F 1 "Conn_01x18" H 2368 3726 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical" H 2450 2800 50  0001 C CNN
+F 3 "~" H 2450 2800 50  0001 C CNN
+	1    2450 2800
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LM2596S-ADJ U?
+U 1 1 5E61B6CF
+P 8175 1450
+F 0 "U?" H 8175 1800 50  0000 C CNN
+F 1 "LM2596S-ADJ" H 8175 1726 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-263-5_TabPin3" H 8175 1725 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2596.pdf" H 8175 1450 50  0001 C CNN
+	1    8175 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L L?
+U 1 1 5E61CA4D
+P 9175 1550
+F 0 "L?" V 9250 1525 50  0000 L CNN
+F 1 "33uH" V 9100 1450 50  0000 L CNN
+F 2 "Inductor_SMD:L_12x12mm_H8mm" H 9175 1550 50  0001 C CNN
+F 3 "http://www.samwha.co.kr/tecom/product/catalogue/SFCB1280T.pdf" H 9175 1550 50  0001 C CNN
+	1    9175 1550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5E61E251
+P 9500 1700
+F 0 "C?" H 9615 1746 50  0000 L CNN
+F 1 "47uF/16V" H 9615 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 9500 1700 50  0001 C CNN
+F 3 "~" H 9500 1700 50  0001 C CNN
+	1    9500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E61F13B
+P 8175 1850
+F 0 "#PWR?" H 8175 1600 50  0001 C CNN
+F 1 "GND" H 8180 1677 50  0000 C CNN
+F 2 "" H 8175 1850 50  0001 C CNN
+F 3 "" H 8175 1850 50  0001 C CNN
+	1    8175 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_US RV?
+U 1 1 5E6222C0
+P 9500 1350
+F 0 "RV?" H 9432 1304 50  0000 R CNN
+F 1 "50k" H 9432 1395 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_Bourns_3296W_Vertical" H 9500 1350 50  0001 C CNN
+F 3 "~" H 9500 1350 50  0001 C CNN
+	1    9500 1350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E6233A6
+P 7625 1850
+F 0 "#PWR?" H 7625 1600 50  0001 C CNN
+F 1 "GND" H 7630 1677 50  0000 C CNN
+F 2 "" H 7625 1850 50  0001 C CNN
+F 3 "" H 7625 1850 50  0001 C CNN
+	1    7625 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8675 1550 8850 1550
+Wire Wire Line
+	8850 1550 9025 1550
+Connection ~ 8850 1550
+Wire Wire Line
+	9325 1550 9500 1550
+$Comp
+L power:+5V #PWR?
+U 1 1 5E62C708
+P 9800 1475
+F 0 "#PWR?" H 9800 1325 50  0001 C CNN
+F 1 "+5V" H 9815 1648 50  0000 C CNN
+F 2 "" H 9800 1475 50  0001 C CNN
+F 3 "" H 9800 1475 50  0001 C CNN
+	1    9800 1475
+	1    0    0    -1  
+$EndComp
+Connection ~ 9500 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5E62E243
+P 8850 1850
+F 0 "#PWR?" H 8850 1600 50  0001 C CNN
+F 1 "GND" H 8855 1677 50  0000 C CNN
+F 2 "" H 8850 1850 50  0001 C CNN
+F 3 "" H 8850 1850 50  0001 C CNN
+	1    8850 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E62E617
+P 9500 1850
+F 0 "#PWR?" H 9500 1600 50  0001 C CNN
+F 1 "GND" H 9505 1677 50  0000 C CNN
+F 2 "" H 9500 1850 50  0001 C CNN
+F 3 "" H 9500 1850 50  0001 C CNN
+	1    9500 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 1350 8675 1350
+Wire Wire Line
+	9500 1500 9500 1550
+$Comp
+L power:GND #PWR?
+U 1 1 5E631804
+P 9500 1200
+F 0 "#PWR?" H 9500 950 50  0001 C CNN
+F 1 "GND" H 9505 1027 50  0000 C CNN
+F 2 "" H 9500 1200 50  0001 C CNN
+F 3 "" H 9500 1200 50  0001 C CNN
+	1    9500 1200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5E631FB7
+P 6625 1450
+F 0 "J?" H 6543 1767 50  0000 C CNN
+F 1 "Molex6410" H 6543 1676 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-396_A-41791-0003_1x03_P3.96mm_Vertical" H 6625 1450 50  0001 C CNN
+F 3 "~" H 6625 1450 50  0001 C CNN
+	1    6625 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E632DD9
+P 6925 1850
+F 0 "#PWR?" H 6925 1600 50  0001 C CNN
+F 1 "GND" H 6930 1677 50  0000 C CNN
+F 2 "" H 6925 1850 50  0001 C CNN
+F 3 "" H 6925 1850 50  0001 C CNN
+	1    6925 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 5E6333BC
+P 7300 1600
+F 0 "C?" H 7415 1646 50  0000 L CNN
+F 1 "47uF/16V" H 7125 1500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_Elec_6.3x5.4" H 7300 1600 50  0001 C CNN
+F 3 "~" H 7300 1600 50  0001 C CNN
+	1    7300 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 1350
+Wire Wire Line
+	7300 1350 7675 1350
+Wire Wire Line
+	7675 1550 7625 1550
+Wire Wire Line
+	7625 1550 7625 1850
+Wire Wire Line
+	8175 1750 8175 1850
+$Comp
+L power:+BATT #PWR?
+U 1 1 5E635C89
+P 7300 1350
+F 0 "#PWR?" H 7300 1200 50  0001 C CNN
+F 1 "+BATT" H 7315 1523 50  0000 C CNN
+F 2 "" H 7300 1350 50  0001 C CNN
+F 3 "" H 7300 1350 50  0001 C CNN
+	1    7300 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5E6369EC
+P 10025 1550
+F 0 "R?" V 9820 1550 50  0000 C CNN
+F 1 "330R" V 9911 1550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 10065 1540 50  0001 C CNN
+F 3 "~" H 10025 1550 50  0001 C CNN
+	1    10025 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED_ALT D?
+U 1 1 5E638334
+P 10225 1725
+F 0 "D?" V 10264 1607 50  0000 R CNN
+F 1 "LED_1608" V 10175 1600 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 10225 1725 50  0001 C CNN
+F 3 "~" H 10225 1725 50  0001 C CNN
+	1    10225 1725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E6393B6
+P 10225 1875
+F 0 "#PWR?" H 10225 1625 50  0001 C CNN
+F 1 "GND" H 10230 1702 50  0000 C CNN
+F 2 "" H 10225 1875 50  0001 C CNN
+F 3 "" H 10225 1875 50  0001 C CNN
+	1    10225 1875
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 1550 9800 1475
+Wire Wire Line
+	9500 1550 9800 1550
+Wire Wire Line
+	9875 1550 9800 1550
+Connection ~ 9800 1550
+Wire Wire Line
+	10175 1550 10225 1550
+Wire Wire Line
+	10225 1550 10225 1575
+$Comp
+L power:+5V #PWR?
+U 1 1 5E642330
+P 2650 2000
+F 0 "#PWR?" H 2650 1850 50  0001 C CNN
+F 1 "+5V" V 2665 2128 50  0000 L CNN
+F 2 "" H 2650 2000 50  0001 C CNN
+F 3 "" H 2650 2000 50  0001 C CNN
+	1    2650 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E645BCF
+P 2650 3700
+F 0 "#PWR?" H 2650 3450 50  0001 C CNN
+F 1 "GND" V 2655 3572 50  0000 R CNN
+F 2 "" H 2650 3700 50  0001 C CNN
+F 3 "" H 2650 3700 50  0001 C CNN
+	1    2650 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E634BD3
+P 7300 1850
+F 0 "#PWR?" H 7300 1600 50  0001 C CNN
+F 1 "GND" H 7305 1677 50  0000 C CNN
+F 2 "" H 7300 1850 50  0001 C CNN
+F 3 "" H 7300 1850 50  0001 C CNN
+	1    7300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1450 7300 1350
+Wire Wire Line
+	7300 1750 7300 1850
+Wire Wire Line
+	6825 1350 7300 1350
+Wire Wire Line
+	6825 1550 6925 1550
+Wire Wire Line
+	6925 1550 6925 1850
+$Comp
+L Device:D D?
+U 1 1 5E61D50B
+P 8850 1700
+F 0 "D?" V 8850 1825 50  0000 C CNN
+F 1 "MBRS360" V 8950 1700 50  0000 C CNN
+F 2 "Diode_SMD:D_SMC_Handsoldering" H 8850 1700 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/MBRS360T3-D.PDF" H 8850 1700 50  0001 C CNN
+	1    8850 1700
+	0    1    1    0   
+$EndComp
+$EndSCHEMATC
